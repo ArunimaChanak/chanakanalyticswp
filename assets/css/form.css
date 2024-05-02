@@ -1,0 +1,104 @@
+.quote-message .form-section{
+	background: #FFFFFF;
+    box-shadow: 14px 22px 52px #7f7f7f21;
+    border-radius: 15px;
+    padding: 48px 48px 60px;
+}
+.quote-message .form-section h4{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.015em;
+    color: #061C3D;
+    margin-bottom: 30px;
+}
+.quote-message .form-section .form-field{
+    position: relative;
+    padding: 0 11px;
+    margin: 15px 0 30px 0;
+}
+.quote-message .form-section textarea,
+.quote-message .form-section select,
+.quote-message .form-section input:not([type="submit"]),
+.quote-message .form-section label{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #061C3D;
+    display: block;
+    padding: 11px 0;
+    text-transform: capitalize;
+}
+.quote-message .form-section label{
+    position: absolute;
+    transition: var(--transition);
+    top: 0;
+    pointer-events: none;
+}
+.quote-message .form-section textarea,
+.quote-message .form-section select,
+.quote-message .form-section input:not([type="submit"]){
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #707070;
+    color: #838E9E;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+}
+.quote-message .form-section textarea:focus ~ label,
+.quote-message .form-section textarea:valid ~ label,
+.quote-message .form-section select:focus ~ label,
+.quote-message .form-section select:valid ~ label,
+.quote-message .form-section input:focus ~ label,
+.quote-message .form-section input:valid ~ label {
+    top: -25px;
+    left: 11px;
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.quote-message .form-section input[type="file"]{
+    background: #F5F6F7;
+}
+.quote-message .form-section .textbox{
+    height: 106px;
+    resize: none;
+}
+.quote-message .form-section [type="submit"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background-color: var(--blue);
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding: 15.5px 10px;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+}
+.quote-message .form-section [type="submit"] img{
+    margin-left: 12px;
+}
+@media only screen and (max-width: 1199px){
+    .quote-message .form-section h4 {
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .quote-message .form-section{
+        padding: 0px 15px 35px;
+    }
+    .quote-message .form-section h4{
+        text-align: center;
+    }
+    .quote-message .form-section [type="submit"] {
+        font-size: 16px;
+        padding: 14px 10px;
+    }
+}

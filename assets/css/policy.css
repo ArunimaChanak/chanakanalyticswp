@@ -1,0 +1,96 @@
+.policy_banner{
+    margin: 46px 0 0;
+    padding: 208px 0 110px;
+    background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+}
+
+.policy_banner .banner-text h1,
+.policy_body h2,
+.policy_body h3{
+    font-weight: 700;
+    color: #0A093D;
+    margin: 14px 0;
+    position: relative;
+    width: fit-content;
+}
+.policy_banner .banner-text h1{
+    font-size: 55px !important;
+    line-height: 66px;
+
+}
+.policy_banner .banner-text h1::after{
+/* .policy_body h2::after, */
+/* .policy_body h3::after { */
+    content: var(--pseudo);
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    bottom: 10px;
+    right: 0;
+    top: 60px;
+    background: #404EFF;
+    transform: rotate(-1.86deg);
+}
+.policy_banner .banner-text h1::after{
+}
+.policy_banner .banner-text p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #656464;
+    margin-bottom: 0;
+    max-width: 550px;
+}
+
+.policy_body{
+    margin: -60px 0 130px;
+}
+.policy_body .content{
+    width: 100%;
+}
+.policy_body .policy_description{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #656464;
+    padding-left: 60px;
+}
+.policy_body .policy_description span,
+.policy_body .policy_description p,
+.policy_body .policy_description ul,
+.policy_body .policy_description li{
+    position: relative;
+    margin-top: 0px !important;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+.policy_body .policy_description li{
+    padding-left: 25px;
+}
+
+.policy_body .policy_description li::before {
+    content: '\f058';
+    font: var(--fa-font-regular);
+    color: var(--hvr-cbg);
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 7.5px;
+}
+@media only screen and (max-width: 767px){
+    .policy_banner {
+        padding: 80px 0;
+    }
+}
+@media only screen and (max-width: 576px){
+    .policy_banner {
+        padding: 52px 0 63px;
+    }
+    .policy_body {
+        margin: 10px 0 30px;
+    }
+}
